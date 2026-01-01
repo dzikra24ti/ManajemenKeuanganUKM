@@ -38,9 +38,9 @@
                 <div class="col-md-6 mb-3">
                     <label class="form-label">Role <span class="text-danger">*</span></label>
                     <select name="role" class="form-select @error('role') is-invalid @enderror" required>
-                        <option value="superadmin" {{ old('role', $user->role) === 'superadmin' ? 'selected' : '' }}>SuperAdmin</option>
-                        <option value="staff" {{ old('role', $user->role) === 'staff' ? 'selected' : '' }}>Staff</option>
-                        <option value="user" {{ old('role', $user->role) === 'user' ? 'selected' : '' }}>User</option>
+                        <option value="superadmin" {{ old('role') === 'superadmin' ? 'selected' : '' }}>SuperAdmin</option>
+                        <option value="staff" {{ old('role') === 'staff' ? 'selected' : '' }}>Staff</option>
+                        <option value="user" {{ old('role') === 'user' ? 'selected' : '' }}>User</option>
                     </select>
                     @error('role')
                         <div class="invalid-feedback">{{ $message }}</div>
