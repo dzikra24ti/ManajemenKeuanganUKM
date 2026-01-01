@@ -27,7 +27,7 @@ class User extends Authenticatable
         'address',
         'is_active',
     ];
-
+        
     /**
      * The attributes that should be hidden for serialization.
      *
