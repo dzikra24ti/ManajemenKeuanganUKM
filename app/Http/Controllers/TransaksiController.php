@@ -62,6 +62,7 @@ class TransaksiController extends Controller
     return redirect()->route('transaksi.index')
         ->with('success', 'Transaksi berhasil disimpan!');
 }
+
 public function edit(Transaksi $transaksi)
 {
     return view('admin.transaksi.edit', compact('transaksi'));
